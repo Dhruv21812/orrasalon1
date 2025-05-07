@@ -8,25 +8,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cascadia+Code:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
             <div class="nav-wrapper">
-                <a href="index.html" class="logo">Orra</a>
+                <a href="index.html" class="logo">Orra Salon</a>
                 <div class="nav-links" id="navLinks">
                     <a href="index.html" class="nav-link">Home</a>
                     <a href="index.html#about" class="nav-link">About</a>
                     <a href="index.html#services" class="nav-link">Services</a>
+                    <a href="index.html#pricing" class="nav-link">Pricing</a>
                     <a href="index.html#gallery" class="nav-link">Gallery</a>
                     <a href="index.html#booking" class="nav-link">Booking</a>
                     <a href="index.html#team" class="nav-link">Team</a>
-                    <a href="index.html#testimonials" class="nav-link">Testimonials</a>
                     <a href="index.html#contact" class="nav-link">Contact</a>
                     <a href="#" class="client-portal-btn">Client Portal</a>
                 </div>
-                <button class="menu-toggle" id="menuToggle">
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
                     <span class="bar"></span>
                     <span class="bar"></span>
                     <span class="bar"></span>
@@ -34,6 +36,16 @@
             </div>
         </div>
     </nav>
+
+    <!-- Animated Scissor Element -->
+    <div class="animated-scissor" id="animatedScissor">
+        <div class="scissor-icon">
+            <i class="fa-solid fa-scissors"></i>
+        </div>
+        <div class="speech-bubble">
+            <p>Book Now!</p>
+        </div>
+    </div>
 
     <!-- Gallery Page -->
     <section class="gallery-page">
@@ -43,7 +55,7 @@
             <div class="gallery-page-grid">
                 <div class="gallery-item">
                     <div class="gallery-image">
-                        <img src="https://via.placeholder.com/400x300" alt="Elegant Haircut">
+                        <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" alt="Elegant Haircut">
                     </div>
                     <div class="gallery-caption">
                         <h3>Elegant Haircut</h3>
@@ -52,7 +64,7 @@
                 </div>
                 <div class="gallery-item">
                     <div class="gallery-image">
-                        <img src="https://via.placeholder.com/400x300" alt="Color Transformation">
+                        <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Color Transformation">
                     </div>
                     <div class="gallery-caption">
                         <h3>Color Transformation</h3>
@@ -61,7 +73,7 @@
                 </div>
                 <div class="gallery-item">
                     <div class="gallery-image">
-                        <img src="https://via.placeholder.com/400x300" alt="Bridal Styling">
+                        <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1528&q=80" alt="Bridal Styling">
                     </div>
                     <div class="gallery-caption">
                         <h3>Bridal Styling</h3>
@@ -70,7 +82,7 @@
                 </div>
                 <div class="gallery-item">
                     <div class="gallery-image">
-                        <img src="https://via.placeholder.com/400x300" alt="Men's Grooming">
+                        <img src="https://images.unsplash.com/photo-1622288432450-277d0fef9f14?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Men's Grooming">
                     </div>
                     <div class="gallery-caption">
                         <h3>Men's Grooming</h3>
@@ -79,7 +91,7 @@
                 </div>
                 <div class="gallery-item">
                     <div class="gallery-image">
-                        <img src="https://via.placeholder.com/400x300" alt="Hair Treatment">
+                        <img src="https://images.unsplash.com/photo-1582095133179-bfd08e2fc6b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Hair Treatment">
                     </div>
                     <div class="gallery-caption">
                         <h3>Hair Treatment</h3>
@@ -88,7 +100,7 @@
                 </div>
                 <div class="gallery-item">
                     <div class="gallery-image">
-                        <img src="https://via.placeholder.com/400x300" alt="Facial Care">
+                        <img src="https://images.unsplash.com/photo-1596178060810-72c633ce9383?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Facial Care">
                     </div>
                     <div class="gallery-caption">
                         <h3>Facial Care</h3>
@@ -97,7 +109,7 @@
                 </div>
                 <div class="gallery-item">
                     <div class="gallery-image">
-                        <img src="https://via.placeholder.com/400x300" alt="Styling Session">
+                        <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Styling Session">
                     </div>
                     <div class="gallery-caption">
                         <h3>Styling Session</h3>
@@ -106,7 +118,7 @@
                 </div>
                 <div class="gallery-item">
                     <div class="gallery-image">
-                        <img src="https://via.placeholder.com/400x300" alt="Hair Extensions">
+                        <img src="https://images.unsplash.com/photo-1519699047748-de8e457a634e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1480&q=80" alt="Hair Extensions">
                     </div>
                     <div class="gallery-caption">
                         <h3>Hair Extensions</h3>
@@ -115,7 +127,7 @@
                 </div>
                 <div class="gallery-item">
                     <div class="gallery-image">
-                        <img src="https://via.placeholder.com/400x300" alt="Spa Treatment">
+                        <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Spa Treatment">
                     </div>
                     <div class="gallery-caption">
                         <h3>Spa Treatment</h3>
@@ -124,7 +136,7 @@
                 </div>
                 <div class="gallery-item">
                     <div class="gallery-image">
-                        <img src="https://via.placeholder.com/400x300" alt="Makeup Application">
+                        <img src="https://images.unsplash.com/photo-1487412947147-5cebf100ffc2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1471&q=80" alt="Makeup Application">
                     </div>
                     <div class="gallery-caption">
                         <h3>Makeup Application</h3>
@@ -133,7 +145,7 @@
                 </div>
                 <div class="gallery-item">
                     <div class="gallery-image">
-                        <img src="https://via.placeholder.com/400x300" alt="Hair Coloring">
+                        <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" alt="Hair Coloring">
                     </div>
                     <div class="gallery-caption">
                         <h3>Hair Coloring</h3>
@@ -142,7 +154,7 @@
                 </div>
                 <div class="gallery-item">
                     <div class="gallery-image">
-                        <img src="https://via.placeholder.com/400x300" alt="Face Pack Treatment">
+                        <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc236c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Face Pack Treatment">
                     </div>
                     <div class="gallery-caption">
                         <h3>Face Pack Treatment</h3>
@@ -165,17 +177,14 @@
                     <p>&copy; <span id="currentYear"></span> Orra Salon. All rights reserved.</p>
                 </div>
                 <div class="footer-social">
-                    <a href="#" class="social-link">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
-                        <span class="sr-only">Facebook</span>
+                    <a href="#" class="social-link" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
                     </a>
-                    <a href="#" class="social-link">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
-                        <span class="sr-only">Instagram</span>
+                    <a href="#" class="social-link" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
                     </a>
-                    <a href="#" class="social-link">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
-                        <span class="sr-only">Twitter</span>
+                    <a href="#" class="social-link" aria-label="Twitter">
+                        <i class="fa-brands fa-twitter"></i>
                     </a>
                 </div>
             </div>
