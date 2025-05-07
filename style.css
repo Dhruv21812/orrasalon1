@@ -1,13 +1,13 @@
 /* Base Styles */
 :root {
-  --background: #0d0d0d;
+  --background: #0D0D0D;
   --foreground: #ffffff;
   --card: #1a1a1a;
   --card-dark: #121212;
   --card-light: #2a2a2a;
-  --primary: #f5e1da;
+  --primary: #F5E1DA;
   --primary-hover: #e8d0c8;
-  --accent: #8b4513;
+  --accent: #8B4513;
   --accent-hover: #7a3b10;
   --border: #333333;
   --text-muted: #999999;
@@ -243,7 +243,7 @@ img {
 }
 
 .book-now-btn:before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: -100%;
@@ -279,8 +279,7 @@ img {
 }
 
 @keyframes floatScissors {
-  0%,
-  100% {
+  0%, 100% {
     transform: translateY(0);
   }
   50% {
@@ -632,7 +631,7 @@ img {
 }
 
 .service-image:before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -713,7 +712,7 @@ img {
 }
 
 .gallery-image:before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -772,7 +771,7 @@ img {
 }
 
 .view-gallery-btn:before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: -100%;
@@ -900,7 +899,7 @@ img {
 }
 
 .submit-btn:before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: -100%;
@@ -966,7 +965,7 @@ img {
 }
 
 .member-image:before {
-  content: "";
+  content: '';
   position: absolute;
   top: 0;
   left: 0;
@@ -1202,11 +1201,11 @@ img {
     bottom: 5%;
     left: 5%;
   }
-
+  
   .pricing-table {
     font-size: 0.9rem;
   }
-
+  
   .pricing-table th,
   .pricing-table td {
     padding: 0.75rem 0.5rem;
@@ -1256,16 +1255,16 @@ img {
     padding: 0.25rem 0.75rem;
     font-size: 0.75rem;
   }
-
+  
   .book-now-container {
     flex-direction: column;
     gap: 0.5rem;
   }
-
+  
   .pricing-table {
     font-size: 0.8rem;
   }
-
+  
   .pricing-table th,
   .pricing-table td {
     padding: 0.5rem 0.25rem;
