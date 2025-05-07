@@ -8,25 +8,27 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cascadia+Code:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container">
             <div class="nav-wrapper">
-                <a href="index.html" class="logo">Orra</a>
+                <a href="index.html" class="logo">Orra Salon</a>
                 <div class="nav-links" id="navLinks">
                     <a href="#" class="nav-link">Home</a>
                     <a href="#about" class="nav-link">About</a>
                     <a href="#services" class="nav-link">Services</a>
+                    <a href="#pricing" class="nav-link">Pricing</a>
                     <a href="#gallery" class="nav-link">Gallery</a>
                     <a href="#booking" class="nav-link">Booking</a>
                     <a href="#team" class="nav-link">Team</a>
-                    <a href="#testimonials" class="nav-link">Testimonials</a>
                     <a href="#contact" class="nav-link">Contact</a>
                     <a href="#" class="client-portal-btn">Client Portal</a>
                 </div>
-                <button class="menu-toggle" id="menuToggle">
+                <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu">
                     <span class="bar"></span>
                     <span class="bar"></span>
                     <span class="bar"></span>
@@ -43,9 +45,14 @@
         <div class="curved-line cl-4"></div>
         
         <div class="hero-content">
-            <h1 class="hero-title">Orra</h1>
+            <h1 class="hero-title">Orra Salon</h1>
             <p class="hero-subtitle">Elevate Your Style</p>
-            <a href="#booking" class="book-now-btn">Book Now</a>
+            <div class="book-now-container">
+                <a href="#booking" class="book-now-btn">Book Now</a>
+                <div class="floating-scissors">
+                    <i class="fa-solid fa-scissors"></i>
+                </div>
+            </div>
         </div>
         
         <div class="floating-discount" id="floatingDiscount">
@@ -57,12 +64,22 @@
         </div>
     </section>
 
+    <!-- Animated Scissor Element -->
+    <div class="animated-scissor" id="animatedScissor">
+        <div class="scissor-icon">
+            <i class="fa-solid fa-scissors"></i>
+        </div>
+        <div class="speech-bubble">
+            <p>Book Now!</p>
+        </div>
+    </div>
+
     <!-- About Section -->
     <section id="about" class="about-section section-fade-in">
         <div class="container">
             <div class="about-wrapper">
                 <div class="about-image">
-                    <img src="https://via.placeholder.com/600x800" alt="Orra Salon Interior">
+                    <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Orra Salon Interior">
                     <div class="about-accent"></div>
                 </div>
                 <div class="about-content">
@@ -204,6 +221,84 @@
         </div>
     </section>
 
+    <!-- Pricing Table Section -->
+    <section id="pricing" class="pricing-section section-fade-in">
+        <div class="container">
+            <h2 class="section-title centered">Our Pricing</h2>
+            <div class="pricing-table-container">
+                <table class="pricing-table">
+                    <thead>
+                        <tr>
+                            <th>Service</th>
+                            <th>Description</th>
+                            <th>Duration</th>
+                            <th>Price</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr class="pricing-row">
+                            <td>Haircut & Style</td>
+                            <td>Professional cut and styling for any hair type</td>
+                            <td>60 min</td>
+                            <td>₹650</td>
+                            <td><a href="#booking" class="book-service-btn">Book</a></td>
+                        </tr>
+                        <tr class="pricing-row">
+                            <td>Hair Color</td>
+                            <td>Full color treatment with premium products</td>
+                            <td>120 min</td>
+                            <td>₹1,200</td>
+                            <td><a href="#booking" class="book-service-btn">Book</a></td>
+                        </tr>
+                        <tr class="pricing-row">
+                            <td>Highlights</td>
+                            <td>Partial or full highlights for dimension</td>
+                            <td>150 min</td>
+                            <td>₹1,500</td>
+                            <td><a href="#booking" class="book-service-btn">Book</a></td>
+                        </tr>
+                        <tr class="pricing-row">
+                            <td>Balayage</td>
+                            <td>Hand-painted highlights for natural look</td>
+                            <td>180 min</td>
+                            <td>₹1,800</td>
+                            <td><a href="#booking" class="book-service-btn">Book</a></td>
+                        </tr>
+                        <tr class="pricing-row">
+                            <td>Makeup</td>
+                            <td>Professional makeup for any occasion</td>
+                            <td>60 min</td>
+                            <td>₹1,000</td>
+                            <td><a href="#booking" class="book-service-btn">Book</a></td>
+                        </tr>
+                        <tr class="pricing-row">
+                            <td>Bridal Package</td>
+                            <td>Complete hair, makeup and styling for your special day</td>
+                            <td>240 min</td>
+                            <td>₹5,000</td>
+                            <td><a href="#booking" class="book-service-btn">Book</a></td>
+                        </tr>
+                        <tr class="pricing-row">
+                            <td>Spa Treatment</td>
+                            <td>Relaxing spa with premium products</td>
+                            <td>90 min</td>
+                            <td>₹1,200</td>
+                            <td><a href="#booking" class="book-service-btn">Book</a></td>
+                        </tr>
+                        <tr class="pricing-row">
+                            <td>Manicure & Pedicure</td>
+                            <td>Complete nail care and polish</td>
+                            <td>75 min</td>
+                            <td>₹800</td>
+                            <td><a href="#booking" class="book-service-btn">Book</a></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </section>
+
     <!-- Book Services Section -->
     <section id="book-services" class="book-services-section section-fade-in">
         <div class="container">
@@ -211,7 +306,7 @@
             <div class="featured-services">
                 <div class="featured-service-card">
                     <div class="service-image">
-                        <img src="https://via.placeholder.com/400x300" alt="Premium Haircut & Style">
+                        <img src="https://images.unsplash.com/photo-1560066984-138dadb4c035?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Premium Haircut & Style">
                     </div>
                     <div class="service-details">
                         <h3>Premium Haircut & Style</h3>
@@ -225,7 +320,7 @@
                 </div>
                 <div class="featured-service-card">
                     <div class="service-image">
-                        <img src="https://via.placeholder.com/400x300" alt="Color & Highlights Package">
+                        <img src="https://images.unsplash.com/photo-1562322140-8baeececf3df?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" alt="Color & Highlights Package">
                     </div>
                     <div class="service-details">
                         <h3>Color & Highlights Package</h3>
@@ -239,7 +334,7 @@
                 </div>
                 <div class="featured-service-card">
                     <div class="service-image">
-                        <img src="https://via.placeholder.com/400x300" alt="Luxury Spa Package">
+                        <img src="https://images.unsplash.com/photo-1570172619644-dfd03ed5d881?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Luxury Spa Package">
                     </div>
                     <div class="service-details">
                         <h3>Luxury Spa Package</h3>
@@ -262,7 +357,7 @@
             <div class="gallery-grid">
                 <div class="gallery-item">
                     <div class="gallery-image">
-                        <img src="https://via.placeholder.com/400x300" alt="Elegant Haircut">
+                        <img src="https://images.unsplash.com/photo-1580618672591-eb180b1a973f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1469&q=80" alt="Elegant Haircut">
                     </div>
                     <div class="gallery-caption">
                         <h3>Elegant Haircut</h3>
@@ -271,7 +366,7 @@
                 </div>
                 <div class="gallery-item">
                     <div class="gallery-image">
-                        <img src="https://via.placeholder.com/400x300" alt="Color Transformation">
+                        <img src="https://images.unsplash.com/photo-1605497788044-5a32c7078486?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Color Transformation">
                     </div>
                     <div class="gallery-caption">
                         <h3>Color Transformation</h3>
@@ -280,7 +375,7 @@
                 </div>
                 <div class="gallery-item">
                     <div class="gallery-image">
-                        <img src="https://via.placeholder.com/400x300" alt="Bridal Styling">
+                        <img src="https://images.unsplash.com/photo-1595476108010-b4d1f102b1b1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1528&q=80" alt="Bridal Styling">
                     </div>
                     <div class="gallery-caption">
                         <h3>Bridal Styling</h3>
@@ -289,7 +384,7 @@
                 </div>
                 <div class="gallery-item">
                     <div class="gallery-image">
-                        <img src="https://via.placeholder.com/400x300" alt="Facial Treatment">
+                        <img src="https://images.unsplash.com/photo-1596178060810-72c633ce9383?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Facial Treatment">
                     </div>
                     <div class="gallery-caption">
                         <h3>Facial Treatment</h3>
@@ -298,7 +393,7 @@
                 </div>
                 <div class="gallery-item">
                     <div class="gallery-image">
-                        <img src="https://via.placeholder.com/400x300" alt="Men's Grooming">
+                        <img src="https://images.unsplash.com/photo-1622288432450-277d0fef9f14?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Men's Grooming">
                     </div>
                     <div class="gallery-caption">
                         <h3>Men's Grooming</h3>
@@ -307,7 +402,7 @@
                 </div>
                 <div class="gallery-item">
                     <div class="gallery-image">
-                        <img src="https://via.placeholder.com/400x300" alt="Hair Treatment">
+                        <img src="https://images.unsplash.com/photo-1582095133179-bfd08e2fc6b3?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Hair Treatment">
                     </div>
                     <div class="gallery-caption">
                         <h3>Hair Treatment</h3>
@@ -326,6 +421,10 @@
         <div class="container">
             <h2 class="section-title centered">Book an Appointment</h2>
             <div class="booking-form-container">
+                <div class="urgency-message">
+                    <i class="fa-solid fa-clock"></i>
+                    <p>Hurry! Only 3 slots left today.</p>
+                </div>
                 <form id="bookingForm" class="booking-form">
                     <div class="form-group">
                         <label for="name">Name</label>
@@ -389,115 +488,67 @@
             <div class="team-grid">
                 <div class="team-member">
                     <div class="member-image">
-                        <img src="https://via.placeholder.com/400x400" alt="Ali">
+                        <img src="https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Ali">
                     </div>
                     <div class="member-details">
                         <h3>Ali</h3>
                         <p class="member-role">Master Stylist</p>
                         <p class="member-bio">With over 10 years of experience, Ali brings creativity and precision to every haircut and style.</p>
                         <div class="social-links">
-                            <a href="#" class="social-link">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                            <a href="#" class="social-link" aria-label="Instagram">
+                                <i class="fa-brands fa-instagram"></i>
                             </a>
-                            <a href="#" class="social-link">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                            <a href="#" class="social-link" aria-label="Facebook">
+                                <i class="fa-brands fa-facebook-f"></i>
                             </a>
-                            <a href="#" class="social-link">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
+                            <a href="#" class="social-link" aria-label="Twitter">
+                                <i class="fa-brands fa-twitter"></i>
                             </a>
                         </div>
                     </div>
                 </div>
                 <div class="team-member">
                     <div class="member-image">
-                        <img src="https://via.placeholder.com/400x400" alt="Anjali">
+                        <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1376&q=80" alt="Anjali">
                     </div>
                     <div class="member-details">
                         <h3>Anjali</h3>
                         <p class="member-role">Color Specialist</p>
                         <p class="member-bio">Anjali is known for her innovative color techniques and ability to create personalized looks for each client.</p>
                         <div class="social-links">
-                            <a href="#" class="social-link">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                            <a href="#" class="social-link" aria-label="Instagram">
+                                <i class="fa-brands fa-instagram"></i>
                             </a>
-                            <a href="#" class="social-link">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                            <a href="#" class="social-link" aria-label="Facebook">
+                                <i class="fa-brands fa-facebook-f"></i>
                             </a>
-                            <a href="#" class="social-link">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
+                            <a href="#" class="social-link" aria-label="Twitter">
+                                <i class="fa-brands fa-twitter"></i>
                             </a>
                         </div>
                     </div>
                 </div>
                 <div class="team-member">
                     <div class="member-image">
-                        <img src="https://via.placeholder.com/400x400" alt="Aseem">
+                        <img src="https://images.unsplash.com/photo-1618886614638-80e3c103d31a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Aseem">
                     </div>
                     <div class="member-details">
                         <h3>Aseem</h3>
                         <p class="member-role">Spa & Skincare Expert</p>
                         <p class="member-bio">Aseem specializes in rejuvenating facial treatments and customized skincare routines for all skin types.</p>
                         <div class="social-links">
-                            <a href="#" class="social-link">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
+                            <a href="#" class="social-link" aria-label="Instagram">
+                                <i class="fa-brands fa  class="social-link" aria-label="Instagram">
+                                <i class="fa-brands fa-instagram"></i>
                             </a>
-                            <a href="#" class="social-link">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
+                            <a href="#" class="social-link" aria-label="Facebook">
+                                <i class="fa-brands fa-facebook-f"></i>
                             </a>
-                            <a href="#" class="social-link">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
+                            <a href="#" class="social-link" aria-label="Twitter">
+                                <i class="fa-brands fa-twitter"></i>
                             </a>
                         </div>
                     </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Testimonials Section -->
-    <section id="testimonials" class="testimonials-section section-fade-in">
-        <div class="container">
-            <h2 class="section-title centered">What Our Clients Say</h2>
-            <div class="testimonials-container">
-                <div class="testimonial-slider" id="testimonialSlider">
-                    <div class="testimonial">
-                        <div class="quote-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"></path><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"></path></svg>
-                        </div>
-                        <p class="testimonial-text">Absolutely loved my new haircut! The stylists at Orra really listen to what you want and deliver beyond expectations. The atmosphere is so relaxing too!</p>
-                        <div class="testimonial-author">
-                            <p class="author-name">Kapil Sethi</p>
-                            <p class="author-service">Men's Haircut & Styling</p>
-                        </div>
-                    </div>
-                    <div class="testimonial">
-                        <div class="quote-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"></path><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"></path></svg>
-                        </div>
-                        <p class="testimonial-text">The face pack treatment left my skin glowing and refreshed. The staff was professional and attentive to my skin's needs. Highly recommend their skincare services!</p>
-                        <div class="testimonial-author">
-                            <p class="author-name">Pooja Awasthi</p>
-                            <p class="author-service">Anti-Aging Face Pack</p>
-                        </div>
-                    </div>
-                    <div class="testimonial">
-                        <div class="quote-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 21c3 0 7-1 7-8V5c0-1.25-.756-2.017-2-2H4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2 1 0 1 0 1 1v1c0 1-1 2-2 2s-1 .008-1 1.031V20c0 1 0 1 1 1z"></path><path d="M15 21c3 0 7-1 7-8V5c0-1.25-.757-2.017-2-2h-4c-1.25 0-2 .75-2 1.972V11c0 1.25.75 2 2 2h.75c0 2.25.25 4-2.75 4v3c0 1 0 1 1 1z"></path></svg>
-                        </div>
-                        <p class="testimonial-text">Professional, friendly, and the best hair color I've ever had. The team at Orra understood exactly what I wanted and executed it perfectly. I'll definitely be back!</p>
-                        <div class="testimonial-author">
-                            <p class="author-name">Atif Sheikh</p>
-                            <p class="author-service">Full Color & Highlights</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="testimonial-controls">
-                    <button id="prevTestimonial" class="testimonial-control prev">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
-                    </button>
-                    <button id="nextTestimonial" class="testimonial-control next">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
-                    </button>
                 </div>
             </div>
         </div>
@@ -511,16 +562,16 @@
                 <div class="contact-info">
                     <div class="contact-item">
                         <div class="contact-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+                            <i class="fa-solid fa-phone"></i>
                         </div>
                         <div class="contact-text">
                             <h3>Phone</h3>
-                            <p>(123) 456-7890</p>
+                            <p>7262620002</p>
                         </div>
                     </div>
                     <div class="contact-item">
                         <div class="contact-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg>
+                            <i class="fa-solid fa-envelope"></i>
                         </div>
                         <div class="contact-text">
                             <h3>Email</h3>
@@ -529,20 +580,20 @@
                     </div>
                     <div class="contact-item">
                         <div class="contact-icon">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+                            <i class="fa-solid fa-location-dot"></i>
                         </div>
                         <div class="contact-text">
                             <h3>Address</h3>
                             <p>
-                                123 Elegance Avenue<br>
-                                Stylish District<br>
-                                Fashion City, FC 12345
+                                E-42 E Block, Kalkaji<br>
+                                New Delhi<br>
+                                India
                             </p>
                         </div>
                     </div>
                 </div>
                 <div class="contact-map">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3024.2219901290355!2d-74.00369368400567!3d40.71312937933185!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25a23e28c1191%3A0x49f75d3281df052a!2s150%20Park%20Row%2C%20New%20York%2C%20NY%2010007%2C%20USA!5e0!3m2!1sen!2sin!4v1650956753975!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Orra Salon Location"></iframe>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3504.7426211279!2d77.25399387559936!3d28.54483088946063!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce3d0e1e25c3b%3A0x8f3c1b17d6be7f0!2sE%20Block%2C%20Kalkaji%2C%20New%20Delhi%2C%20Delhi%20110019!5e0!3m2!1sen!2sin!4v1682956753975!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="Orra Salon Location"></iframe>
                 </div>
             </div>
         </div>
@@ -556,17 +607,14 @@
                     <p>&copy; <span id="currentYear"></span> Orra Salon. All rights reserved.</p>
                 </div>
                 <div class="footer-social">
-                    <a href="#" class="social-link">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path></svg>
-                        <span class="sr-only">Facebook</span>
+                    <a href="#" class="social-link" aria-label="Facebook">
+                        <i class="fa-brands fa-facebook-f"></i>
                     </a>
-                    <a href="#" class="social-link">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"></rect><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"></line></svg>
-                        <span class="sr-only">Instagram</span>
+                    <a href="#" class="social-link" aria-label="Instagram">
+                        <i class="fa-brands fa-instagram"></i>
                     </a>
-                    <a href="#" class="social-link">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path></svg>
-                        <span class="sr-only">Twitter</span>
+                    <a href="#" class="social-link" aria-label="Twitter">
+                        <i class="fa-brands fa-twitter"></i>
                     </a>
                 </div>
             </div>
